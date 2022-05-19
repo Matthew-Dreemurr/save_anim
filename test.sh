@@ -79,7 +79,7 @@ for u in {1..2}; do
 done
 printf "\n\n\n\n\n\n"
 
-git add . ; git commit -am "-"; git push -q
+git add -q . ; git commit -qam "-"; git push -q
 
 
 for u in {1..2}; do
