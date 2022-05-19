@@ -80,6 +80,6 @@ for u in {1..5}; do
 		sleep 0.025
 	done
 done
-printf "\n\n\n\n\n\nnit"
+printf "\n\n\n\n\n\n"
 
 git push
