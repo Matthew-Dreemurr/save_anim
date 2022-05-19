@@ -88,3 +88,4 @@ for u in {1..2}; do
 		sleep 0.025
 	done
 done
+printf "\n\n\n\n\n\n"
