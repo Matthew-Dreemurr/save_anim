@@ -81,3 +81,5 @@ for u in {1..5}; do
 	done
 done
 printf "\n\n\n\n\n\n"
+
+git push
