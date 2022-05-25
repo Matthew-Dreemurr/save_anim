@@ -7,7 +7,7 @@ sauce : save
 save :
 	IFS=""; \
 	ANIM=(">  " " > " "  >" "   "); \
-	(git add . ; git commit -am "TAMER"; git push &); PID=$!; \
+	(git add . ; git commit -am "TAMER"; git push &); PID=$$!; \
 	while true; do \
 		for ((i = 0; i < $${#ANIM[@]}; i++)); do \
 			printf "\e[36;1m%s\e[0G\e[0m" $${ANIM[i]}; \
