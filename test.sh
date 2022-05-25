@@ -74,8 +74,6 @@ ANIM=(
 git add . ; git commit -am "TAMER"; git push &
 PID=$!
 
-echo PID : $PID
-
 
 while true; do
 	for ((i = 0; i < ${#ANIM[@]}; i++)); do
