@@ -5,7 +5,7 @@ all : save
 sauce : save
 
 save :
-	(git add . ; git commit -am "TAMER"; git push &); \
+	git add . ; git commit -am "TAMER"; git push &
 	IFS=""; \
 	ANIM=(">  " " > " "  >" "   "); \
 	while true; do \
