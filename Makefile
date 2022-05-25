@@ -80,7 +80,7 @@ save :
 	) ;\
 	while true; do \
 		for ((i = 0; i < $${#ANIM[@]}; i++)); do \
-			printf "\e[36;1m%s\e[5A\e[0G\e[0m" $${ANIM[i]}; \
+			printf "\e[36;1m%s\e[0G\e[0m" $${ANIM[i]}; \
 			sleep 0.5; \
 			if [[ -z $$(ps -o pid | grep "$$CPID") ]] ;then exit ;fi \
 		;done \
