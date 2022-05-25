@@ -82,9 +82,8 @@ while true; do
 		printf "\e[36;1m%s\e[5A\e[0G\e[0m" ${ANIM[i]}
 		sleep 0.025
 
-		RET=$(jobs -p | grep $PID)
+		RET=$(ps -o pid | grep $PID)
 
-		echo JOBS : "$(jobs -p)"
 		echo RET : "$RET"
 		if [[ -z "$RET" ]]
 		then
