@@ -5,8 +5,10 @@ all : save
 sauce : save
 
 save :
-	git add . ; git commit -am "TAMER"; git push &
-	CPID=$$! \
+	git add . ; git commit -am "TAMER"; 
+	git push & \
+	;\
+	CPID=$$! ;\
 	IFS=""; \
 	ANIM=(">  " " > " "  >" "   "); \
 	while true; do \
