@@ -5,9 +5,9 @@ all : save
 sauce : save
 
 save :
+	(git add . ; git commit -am "TAMER"; git push &); \
 	IFS=""; \
 	ANIM=(">  " " > " "  >" "   "); \
-	(git add . ; git commit -am "TAMER"; git push &); \
 	while true; do \
 		for ((i = 0; i < $${#ANIM[@]}; i++)); do \
 			printf "\e[36;1m%s\e[0G\e[0m" $${ANIM[i]}; \
