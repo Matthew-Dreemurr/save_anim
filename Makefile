@@ -78,7 +78,6 @@ save :
 	| SAVING | \
 	" \
 	) \
-
 	while true; do \
 		for ((i = 0; i < $${#ANIM[@]}; i++)); do \
 			printf "\e[36;1m%s\e[0G\e[0m" $${ANIM[i]}; \
