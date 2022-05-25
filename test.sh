@@ -71,7 +71,7 @@ ANIM=(
 "
 )
 
-git add . ; git commit -am "TAMER"; git push &
+bash -c "git add . ; git commit -am "TAMER"; git push"
 PID=$$
 
 echo PID : $PID
@@ -83,6 +83,8 @@ while true; do
 		sleep 0.025
 
 		RET=$(jobs -p | grep $PID)
+
+		echo "$(jobs -p)"
 		echo RET : "$RET"
 		if [[ -z "$RET" ]]
 		then
