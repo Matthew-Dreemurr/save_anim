@@ -80,11 +80,10 @@ echo PID : $PID
 while true; do
 	for ((i = 0; i < ${#ANIM[@]}; i++)); do
 		printf "\e[36;1m%s\e[5A\e[0G\e[0m" ${ANIM[i]}
-		sleep 0.025
+		sleep 0.05
 
 		RET=$(ps -o pid | grep $PID)
 
-		echo RET : "$RET" PID : $$ CPID : $!
 		if [[ -z "$RET" ]]
 		then
 			echo FINISHED
