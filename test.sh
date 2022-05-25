@@ -82,6 +82,6 @@ while true; do
 		done
 		printf "\e[4A\e[0G\e[0m"
 		sleep 0.040
-		if [[ -z $(ps -o pid | grep "$CPID") ]]; then exit; fi
+		if [[ -z $(ps -o pid | grep "$PID") ]]; then exit; fi
 	done
 done
