@@ -86,7 +86,7 @@ while true; do
 		echo RET : "$RET"
 		if [[ -z "$RET" ]]
 		then
-			exit
+			echo FINISHED
 		fi
 
 
