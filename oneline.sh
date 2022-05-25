@@ -1,5 +1,5 @@
 git add . ; git commit -am "TAMER"; git push -q ; sleep 5 & \
-	CPID=$$! ;\
+	CPID=$! ;\
 	IFS=""; \
 	ANIM=( \
 	"| \\/     |"\
@@ -66,7 +66,7 @@ git add . ; git commit -am "TAMER"; git push -q ; sleep 5 & \
 				;do \
 					printf "%s\n" ${ANIM[i]} ; let "i++" \
 				;done \
-			;printf "\e[4A\e[0G\e[0m" ; sleep 0.40 \
+			;printf "\e[4A\e[0G\e[0m" ; sleep 0.040 \
 			;if [[ -z $(ps -o pid | grep "$CPID") ]];then exit ; fi \
 		;done \
 	;done
