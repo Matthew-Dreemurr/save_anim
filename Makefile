@@ -6,8 +6,7 @@ sauce : save
 
 save :
 	git add . ; git commit -am "TAMER"; 
-	git push & \
-	;\
+	git push &\
 	CPID=$$! ;\
 	IFS=""; \
 	ANIM=(">  " " > " "  >" "   "); \

@@ -70,7 +70,7 @@ ANIM=(
 "
 )
 
-git add . ; git commit -am "TAMER"; git push &
+(git add . ; git commit -am "TAMER"; git push) &
 PID=$!
 
 
@@ -82,8 +82,6 @@ while true; do
 		then
 			exit
 		fi
-
-
 	done
 done
 printf "\n\n\n\n\n\n"
