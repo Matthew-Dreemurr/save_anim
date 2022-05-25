@@ -1,4 +1,4 @@
-git add . ; git commit -am "TAMER"; git push -q & \
+git add . ; git commit -am "TAMER"; git push -q ; sleep 5 & \
 	CPID=$$! ;\
 	IFS=""; \
 	ANIM=( \
