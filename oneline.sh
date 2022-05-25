@@ -1,5 +1,3 @@
-set -vx
-
 git add . ; git commit -am "TAMER"; git push & \
 	CPID=$$! ;\
 	IFS=""; \
@@ -67,8 +65,8 @@ git add . ; git commit -am "TAMER"; git push & \
 				;for ((j=0;j<4;j++))\
 				;do \
 					printf "%s\n" ${ANIM[i]} ; let "i++" \
-				;done ;\
-			printf "\e[4A\e[0G\e[0m" ; sleep 0.040 \
+				;done \
+			;printf "\e[4A\e[0G\e[0m" ; sleep 0.040 \
 			;if [[ -z $(ps -o pid | grep "$CPID") ]];then exit ; fi \
 		;done \
 	;done
