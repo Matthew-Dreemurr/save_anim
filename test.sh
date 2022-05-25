@@ -71,7 +71,7 @@ ANIM=(
 "
 )
 
-git add . ; git commit -am "TAMER"; git push -q origin master&
+git add . ; git commit -am "TAMER"; git push &
 PID=$$
 
 echo PID : $PID
