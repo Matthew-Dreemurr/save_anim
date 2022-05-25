@@ -84,7 +84,7 @@ while true; do
 
 		RET=$(jobs -p | grep $PID)
 
-		echo "$(jobs -p)"
+		echo JOBS : "$(jobs -p)"
 		echo RET : "$RET"
 		if [[ -z "$RET" ]]
 		then
