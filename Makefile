@@ -8,7 +8,7 @@ save :
 	@-git add . ; git commit -am "TAMER";
 	git push &\
 	CPID=$$! ;\
-		IFS=""; \
+	IFS=""; \
 	ANIM=( \
 		" \
 	| \\/     | \
