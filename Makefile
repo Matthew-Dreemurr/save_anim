@@ -5,7 +5,7 @@ all : save
 sauce : save
 
 save :
-	git add . ; git commit -am "TAMER"; 
+	@-git add . ; git commit -am "TAMER"; 
 	git push &\
 	CPID=$$! ;\
 	IFS=""; \
