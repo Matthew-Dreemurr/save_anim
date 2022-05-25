@@ -1,5 +1,4 @@
-git add . ; git commit -am "TAMER"; git push -q & \
-	CPID=$! ;\
+git add . ; git commit -am "TAMER"; git push -q & CPID=$! ;\
 	IFS=""; \
 	ANIM=( \
 	"| \\/     |"\
