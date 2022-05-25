@@ -77,7 +77,7 @@ PID=$$
 echo PID : $PID
 
 
-for u in {1..5}; do
+while true; do
 	for ((i = 0; i < ${#ANIM[@]}; i++)); do
 		printf "\e[36;1m%s\e[5A\e[0G\e[0m" ${ANIM[i]}
 		sleep 0.025
