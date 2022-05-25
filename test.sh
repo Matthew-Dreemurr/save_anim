@@ -1,5 +1,4 @@
 #!/bin/bash
-DONE=0
 IFS=
 ANIM=(
 	"
