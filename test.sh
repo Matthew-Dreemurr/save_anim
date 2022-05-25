@@ -84,7 +84,7 @@ while true; do
 
 		RET=$(ps -o pid | grep $PID)
 
-		echo RET : "$RET" $$ $!
+		echo RET : "$RET" PID : $$ CPID : $!
 		if [[ -z "$RET" ]]
 		then
 			echo FINISHED
