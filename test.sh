@@ -71,7 +71,7 @@ ANIM=(
 "
 )
 
-bash -c "git add . ; git commit -am "TAMER"; git push"
+git add . ; git commit -am "TAMER"; git push &
 PID=$!
 
 echo PID : $PID
@@ -88,6 +88,7 @@ while true; do
 		if [[ -z "$RET" ]]
 		then
 			echo FINISHED
+			exit
 		fi
 
 
