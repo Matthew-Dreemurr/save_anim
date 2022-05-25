@@ -72,7 +72,7 @@ ANIM=(
 )
 
 bash -c "git add . ; git commit -am "TAMER"; git push"
-PID=$$
+PID=$!
 
 echo PID : $PID
 
@@ -84,7 +84,7 @@ while true; do
 
 		RET=$(ps -o pid | grep $PID)
 
-		echo RET : "$RET"
+		echo RET : "$RET" $$ $!
 		if [[ -z "$RET" ]]
 		then
 			echo FINISHED
